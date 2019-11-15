@@ -1,2 +1,7 @@
 1、安装模块时 用命令！+……
 2、当命令编译器出现红色框表示找不到命令核 可能是输入的数据太大请检查数据 尤其是测试时的代码
+3.下载离线包.whl 时cp36代表适用python 3.6  而.gz没有python版本限制
+安装dlib时 步骤：
+a.官网下载：https://pypi.org/project/dlib/19.18.0/#modal-close   下的是dlib-19.18.0.tar.gz
+b.打开spyer  输入cd C:\Users\lenovo\Desktop  该路径为.gz 离线包的下载目录
+c.再输入 !pip install dlib-19.18.0.tar.gz 进行安装
