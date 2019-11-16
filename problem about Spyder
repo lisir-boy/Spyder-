@@ -2,6 +2,18 @@
 2、当命令编译器出现红色框表示找不到命令核 可能是输入的数据太大请检查数据 尤其是测试时的代码
 3.下载离线包.whl 时cp36代表适用python 3.6  而.gz没有python版本限制
 安装dlib时 步骤：
+法一：（失败）因为看不到完整的报错 只会卡在那儿
 a.官网下载：https://pypi.org/project/dlib/19.18.0/#modal-close   下的是dlib-19.18.0.tar.gz
 b.打开spyer  输入cd C:\Users\lenovo\Desktop  该路径为.gz 离线包的下载目录
 c.再输入 !pip install dlib-19.18.0.tar.gz 进行安装
+法二：
+a.同法一
+b.打开anaconda prompt输入cd C:\Users\lenovo\Desktop 回车后再输入pip install dlib-19.18.0.tar.gz 此时会报错 ，查看原因后发现需要装cmake 输入命令
+   pip3 install cmake 回车 安装成功后 再输入pip install dlib-19.18.0.tar.gz 最后显示成功
+c.打开spyder(tensorflow)测试 输入import dlib发现找不到 ，原因是之前安装的dlib包是在anaconda环境下进行的 需要在spyder(tensorflow)内重新安装 步骤同b
+(另：！！！！有待验证：原因：包在安装在anaconda下，需要在spyder(tensorflow)导入anaconda对应环境的python解释器：
+
+在spyder(tensorflow)中，单击“tools--preferences”，然后选择“python interpreter”
+在框里面应该选择你的anaconda中python.exe的位置（C:\Users\name\Anaconda3\python.exe），点击ok
+如果不是默认anaconda环境，选择：C:\Users\name\Anaconda3\envs\env_name\python.exe，点击ok
+)
