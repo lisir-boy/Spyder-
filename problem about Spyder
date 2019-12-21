@@ -1,4 +1,4 @@
-1、安装模块时 用命令！+……
+1、安装模块时 用命令！+…            注意！必须是英文格式
 2、当命令编译器出现红色框表示找不到命令核 可能是输入的数据太大请检查数据 尤其是测试时的代码
 3.下载离线包.whl 时cp36代表适用python 3.6  而.gz没有python版本限制
 安装dlib时 步骤：
@@ -17,3 +17,9 @@ c.打开spyder(tensorflow)测试 输入import dlib发现找不到 ，原因是�
 在框里面应该选择你的anaconda中python.exe的位置（C:\Users\name\Anaconda3\python.exe），点击ok
 如果不是默认anaconda环境，选择：C:\Users\name\Anaconda3\envs\env_name\python.exe，点击ok
 )
+
+安装三维可视化模块Mayavi需注意
+1、命令为 !pip install mayavi
+
+!pip install PyQt5
+2、安装PyQt5 可能会报错要求添加--user   修改后为：!pip install --user PyQt5
