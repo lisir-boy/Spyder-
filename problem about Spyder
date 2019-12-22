@@ -22,8 +22,8 @@ c.打开spyder(tensorflow)测试 输入import dlib发现找不到 ，原因是�
 1、命令为 !pip install mayavi
 
 !pip install PyQt5
-2、安装PyQt5 可能会报错要求添加--user   修改后为：!pip install --user PyQt5
-但当安完后 可能会提示有两个error 一定要重视 是关于 个插件版本问题的 有的可能高了有的不满足  一定要解决先
+2、一定注意pyQt5 版本与sip版本匹配问题 有许多报错的因版本问题 而且pyqt5版本与 spyder及sip有关      安装PyQt5 可能会报错要求添加--user   修改后为：!pip install --user PyQt5
+注意：当安完后 可能会提示有两个error 一定要重视 是关于 个插件版本问题的 有的可能高了有的不满足  一定要解决先。
 
 几种安装模块的方法：
 镜像网站安装如：pip install whois -i http://pypi.douban.com/simple
